@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nextkde-uninstall 1\n"
+"PO-Revision-Date: 2026-11-19 00:00+0000\n"
+"Last-Translator: NextKDE\n"
+"Language-Team: Brazilian Portuguese\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "The application launcher could not be identified."
+msgstr "Não foi possível identificar o lançador do aplicativo."
+
+msgid "The Flatpak application id could not be verified."
+msgstr "Não foi possível verificar o identificador do aplicativo Flatpak."
+
+msgid "This Flatpak is no longer installed."
+msgstr "Este Flatpak não está mais instalado."
+
+msgid "The Snap application name could not be verified."
+msgstr "Não foi possível verificar o nome do aplicativo Snap."
+
+msgid "This Snap is no longer installed."
+msgstr "Este Snap não está mais instalado."
+
+msgid "This application is not owned by a supported package."
+msgstr "Este aplicativo não pertence a um pacote suportado."
+
+msgid "The desktop file is not owned by an RPM package."
+msgstr "O arquivo desktop não pertence a um pacote RPM."
+
+msgid "Flatpak"
+msgstr "Flatpak"
+
+msgid "RPM/Fedora"
+msgstr "RPM/Fedora"
+
+msgid "Uninstall Application?"
+msgstr "Desinstalar aplicativo?"
+
+msgid "Application"
+msgstr "Aplicativo"
+
+msgid "Package"
+msgstr "Pacote"
+
+msgid "Source"
+msgstr "Origem"
+
+msgid "This action cannot be undone."
+msgstr "Esta ação não pode ser desfeita."
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Uninstall"
+msgstr "Desinstalar"
+
+msgid "APT/Debian"
+msgstr "APT/Debian"
+
+msgid "Pacman/Arch"
+msgstr "Pacman/Arch"
+
+msgid "Snap"
+msgstr "Snap"
+
+msgid "APT"
+msgstr "APT"
+
+msgid "Pacman"
+msgstr "Pacman"
+
+msgid "DNF"
+msgstr "DNF"
+
+msgid "Uninstallation cancelled"
+msgstr "Desinstalação cancelada"
+
+msgid "The application changed before removal."
+msgstr "O aplicativo mudou antes da remoção."
+
+msgid "Uninstallation failed"
+msgstr "Falha ao desinstalar"
+
+msgid "The package manager refused the operation."
+msgstr "O gerenciador de pacotes recusou a operação."
+
+msgid "Application uninstalled"
+msgstr "Aplicativo desinstalado"
+
+msgid "Uninstallation unavailable"
+msgstr "Desinstalação indisponível"
+
+msgid "Uninstall Application"
+msgstr "Desinstalar aplicativo"
