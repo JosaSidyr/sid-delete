@@ -1,6 +1,7 @@
 UUID := sid-delete@josasidyr
 DOMAIN := sid-delete
 DIST_DIR := dist
+PACKAGE_STAGE := .package
 PACKAGE := $(DIST_DIR)/$(UUID).shell-extension.zip
 
 .PHONY: all check translations package install uninstall clean
@@ -19,9 +20,13 @@ check: translations
 
 package: check
 	@command -v gnome-extensions >/dev/null || { echo "gnome-extensions is required" >&2; exit 1; }
-	mkdir -p $(DIST_DIR)
-	gnome-extensions pack --force --gettext-domain $(DOMAIN) \
-		--extra-source=locale -o $(DIST_DIR) .
+	rm -rf $(PACKAGE_STAGE)
+	mkdir -p $(DIST_DIR) $(PACKAGE_STAGE)/locale/pt_BR/LC_MESSAGES
+	cp metadata.json extension.js $(PACKAGE_STAGE)/
+	cp locale/pt_BR/LC_MESSAGES/$(DOMAIN).mo \
+		$(PACKAGE_STAGE)/locale/pt_BR/LC_MESSAGES/
+	cd $(PACKAGE_STAGE) && gnome-extensions pack --force \
+		--gettext-domain $(DOMAIN) --extra-source=locale -o ../$(DIST_DIR) .
 	@test -f "$(PACKAGE)"
 
 install: package
@@ -35,5 +40,5 @@ uninstall:
 	gnome-extensions uninstall "$(UUID)" 2>/dev/null || true
 
 clean:
-	rm -rf $(DIST_DIR)
+	rm -rf $(DIST_DIR) $(PACKAGE_STAGE)
 	rm -f locale/pt_BR/LC_MESSAGES/*.mo
