@@ -1,8 +1,8 @@
 {
-    "uuid": "nextkde-uninstaller@nextkde.org",
-    "name": "NextKDE Application Uninstaller",
+    "uuid": "sid-delete@josasidyr",
+    "name": "SidDelete Application Uninstaller",
     "description": "Adds a safe uninstall action to GNOME application drawer menus.",
     "shell-version": ["45", "46", "47", "48", "49", "50", "51"],
-    "gettext-domain": "nextkde-uninstall",
+    "gettext-domain": "sid-delete",
     "version": 1
 }

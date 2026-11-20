@@ -1,5 +1,5 @@
-UUID := nextkde-uninstaller@nextkde.org
-DOMAIN := nextkde-uninstall
+UUID := sid-delete@josasidyr
+DOMAIN := sid-delete
 DIST_DIR := dist
 PACKAGE := $(DIST_DIR)/$(UUID).shell-extension.zip
 
@@ -36,4 +36,4 @@ uninstall:
 
 clean:
 	rm -rf $(DIST_DIR)
-	rm -f locale/pt_BR/LC_MESSAGES/$(DOMAIN).mo
+	rm -f locale/pt_BR/LC_MESSAGES/*.mo

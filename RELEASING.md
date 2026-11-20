@@ -6,7 +6,7 @@
    in the parent repository.
 2. Add the final public repository URL to `metadata.json`.
 3. Confirm that the UUID directory and `metadata.json` use the same UUID:
-   `nextkde-uninstaller@nextkde.org`.
+   `sid-delete@josasidyr`.
 4. Test the extension on every GNOME Shell version declared in metadata.
 5. Test at least one package from each supported source without removing a
    critical system package.
@@ -23,7 +23,7 @@ make package
 Upload:
 
 ```text
-dist/nextkde-uninstaller@nextkde.org.shell-extension.zip
+   dist/sid-delete@josasidyr.shell-extension.zip
 ```
 
 The archive must contain `metadata.json`, `extension.js`, and the compiled

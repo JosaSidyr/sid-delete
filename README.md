@@ -1,4 +1,4 @@
-# NextKDE Application Uninstaller
+# SidDelete Application Uninstaller
 
 A GNOME Shell extension that adds **Uninstall Application** to the context
 menu of applications in the GNOME application drawer, including applications
@@ -77,7 +77,7 @@ Include the GNOME Shell version, distribution, package source, and the output
 of:
 
 ```sh
-gnome-extensions show nextkde-uninstaller@nextkde.org
+gnome-extensions show sid-delete@josasidyr
 journalctl --user -b -u gnome-shell --no-pager
 ```
 
